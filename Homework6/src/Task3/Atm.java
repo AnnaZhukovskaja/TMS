@@ -15,10 +15,7 @@ public class Atm {
     int quantity20InATM;
     int quantity50InATM;
     int quantity100InATM;
-    int sumInAtm;
-    int quantity100InWithdrawnSum;
-    int quantity50InWithdrawnSum;
-    int quantity20InWithdrawnSum;
+
 
     Atm(int quantityOfTwenty, int quantityOfFifty, int quantityOfHundred) {
         this.quantity20InATM = quantityOfTwenty;
@@ -33,6 +30,11 @@ public class Atm {
     }
 
     boolean withdrawal(int sum) {
+
+        int sumInAtm;
+        int quantity100InWithdrawnSum;
+        int quantity50InWithdrawnSum;
+        int quantity20InWithdrawnSum;
 
         sumInAtm = quantity20InATM * 20 + quantity50InATM * 50 + quantity100InATM * 100;
         System.out.println("Summ in the ATM is " + sumInAtm);
