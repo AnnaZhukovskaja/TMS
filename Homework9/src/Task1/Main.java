@@ -15,7 +15,12 @@ public class Main {
     //Метод возвращает true, если значения верны или false в другом случае.
     public static void main(String[] args) throws WrongLoginException, WrongPasswordException {
 
-            System.out.println(LogInSystem.checkInput("22666hgj", "5rert e", "5rerte"));
-
+        try {
+            System.out.println(LogInSystem.checkInput("2 2666hgj", "5rert e", "5rerte"));
+        } catch (WrongLoginException e) {
+            System.out.println("The login is incorrect.");
+        } catch (WrongPasswordException e) {
+            System.out.println("The password is incorrect.");
+        }
     }
 }

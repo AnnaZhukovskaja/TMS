@@ -15,18 +15,14 @@ public class LogInSystem {
     // второй принимает сообщение исключения и передает его в конструктор класса Exception.
     //Метод возвращает true, если значения верны или false в другом случае.
 
+
     public static boolean checkInput(String login, String password, String confirmPassword) throws WrongLoginException, WrongPasswordException {
-
-        boolean rezult = false;
-
         if ((login.contains(" ")) || (login.length() >= 20)) {
             throw new WrongLoginException("");
         } else if ((password.contains(" ")) || (password.length() >= 20) || (confirmPassword.length() != password.length()) || (!isHasDigits(password))) {
             throw new WrongPasswordException("");
-        } else {
-            rezult = true;
         }
-        return rezult;
+        return true;
     }
 
     static private boolean isHasDigits(String psw) {
