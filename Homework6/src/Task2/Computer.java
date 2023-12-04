@@ -20,7 +20,7 @@ public class Computer {
     }
 
     void displayInfo() {
-        System.out.println("Computer: " + "\nModel - " + model + "\nHDD - " + hdd.toString() + "\nRAM -  " + ram.toString() + "\nCost - " + cost);
+        System.out.println("Computer: " + "\nModel - " + model + "\nHDD - " + hdd + "\nRAM -  " + ram + "\nCost - " + cost);
     }
 }
 
