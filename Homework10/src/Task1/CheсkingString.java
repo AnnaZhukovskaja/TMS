@@ -27,7 +27,7 @@ public class CheсkingString {
     //4.- Вывести на экран буквы из номера документа в формате "Letters:yyy/yyy/y/y" в верхнем регистре(реализовать с помощью класса
     //   StringBuilder).
     public static void cheсking4(String numberOfDocument) {
-        System.out.println("Letters:" + new StringBuilder(numberOfDocument.toUpperCase()));
+        System.out.println("Letters:" + new String(numberOfDocument.toUpperCase()));
     }
 
     //- 5.Проверить содержит ли номер документа последовательность abc и вывеcти сообщение содержит или нет(причем, abc и ABC
