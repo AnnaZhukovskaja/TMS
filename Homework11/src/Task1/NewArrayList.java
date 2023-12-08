@@ -19,6 +19,7 @@ public class NewArrayList {
     int countOfElements = 0;
 
     public NewArrayList() {
+        newArrayList = new String[0];
     }
 
     public NewArrayList(int size) {
